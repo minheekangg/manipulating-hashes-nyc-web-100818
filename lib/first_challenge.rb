@@ -13,6 +13,23 @@ def first_challenge
     }
   }
 
+contacts.each do |person, attributes|
+  attributes.each do |attribute, value|
+    if attribute == "knows" && value == nil
+      return person
+    end
+  end
+end
+
+
+
+
+
+
+
+
+
+
   #your code here
 contacts.each do |person, data|
   data.each do |attribute, value|
